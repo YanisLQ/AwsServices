@@ -1,0 +1,36 @@
+@import 'card';
+@import 'navbar';
+@import 'container';
+@import 'tuile';
+@import 'bot';
+@import 'botcard';
+@import 'footer' ;
+@import 'burger';
+
+
+
+@media screen and (min-width: 600px){
+    html {
+        height: 100%;
+        width: 90%;
+        margin: auto;
+        min-height: 100vh;
+    
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        min-height: 100vh;
+    
+    }
+}
+
+
+body{
+    background-color: white;
+}
+

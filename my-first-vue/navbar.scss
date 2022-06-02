@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
+
+:root{
+    --white_color: #fff;
+}
+@media screen and (min-width: 900px) {
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        background:var(--white_color);
+        margin-top: 4%;
+        height: 3%;
+    
+        &__brand{
+            position: relative;
+            display: flex;
+
+            &__img{
+                width: auto;
+                margin-right: 8%;
+            }        
+            &__label{
+                margin: 0;
+                height: auto;
+                width: auto;
+                font-family: 'Jost', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 36px;
+                letter-spacing: 1.4px;
+            }
+        }
+
+        &__menu{
+            position: relative;
+            display: inline-flex;
+
+    
+                a{
+                    padding-left: 0.8rem;
+                    text-decoration: none;
+                    color: black;
+                    font-family: 'Jost', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 36px;
+                    text-align: center;
+                    letter-spacing: .4px;
+                }
+            
+        }
+    
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        background:var(--white_color);
+        margin-top: 4%;
+        height: 3%;
+    
+        &__brand{
+            position: relative;
+            display: flex;
+
+            &__img{
+                width: 40px;
+                height: 40px;
+                margin-right: 8%;
+            }        
+            &__label{
+                margin: 0;
+                height: auto;
+                width: auto;
+                font-family: 'Jost', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 36px;
+                letter-spacing: 1.4px;
+            }
+        }
+
+        &__menu{
+            position: relative;
+            display: none;
+    
+                a{
+                    padding-left: 0.8rem;
+                    text-decoration: none;
+                    color: black;
+                    font-family: 'Jost', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 36px;
+                    text-align: center;
+                    letter-spacing: .4px;
+                }
+                
+            
+        }
+    
+    }
+}
+

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+    
+@media screen and (min-width: 800px) {   
+    .page__card{
+        position: relative;
+        background: #E7816B;
+        border-radius: 0.8rem;
+        padding-top: 8%;
+        height: 470px;
+
+        &__body{
+            display: grid;
+            height: inherit;
+            overflow: hidden;
+            grid-template-columns: 0.6fr 1fr;
+            margin-left: 8%;
+            margin-right: 8%;
+
+            
+            &__left{
+                grid-column: 1/3;
+                margin-right: 30%;
+                
+
+                &__label{
+                    font-family: Jost;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                }
+            
+                &__paragraph{
+                    font-family: Jost;
+                    color: #FFFFFF;
+                    margin: auto;
+            
+                }
+                &__btn{
+                    margin-top: 8%;
+                    border: none;
+                    border-radius: 0.8rem;
+                    background-color: #fff;
+                    cursor: pointer;
+                    font-family: Jost;
+                    font-weight: 500;
+                    padding: 1rem 1.6rem;
+            
+                }
+                &__btn:hover{
+                    margin-top: 8%;
+                    border: none;
+                    border-radius: 0.8rem;
+                    background-color: #FFAD9B;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                    font-family: Jost;
+                    font-weight: 500;
+                    padding: 1rem 1.6rem;        
+                }
+            }        
+            &__right{
+                grid-column: 3;
+
+            }
+        }
+    }
+
+}
+
+@media screen and(max-width: 800px) {
+    .page__card{
+        top: 50px;
+        left: -1px;
+        background: #E7816B;
+        height: 600px;
+    
+        &__body{
+            display: grid;
+            height: inherit;
+            overflow: hidden;
+            grid-template-columns: auto;
+            grid-template-rows: repeat(2,1fr);
+            margin-left: 8%;
+            margin-right: 8%;
+    
+            
+            &__left{
+                grid-row: 1;
+                grid-column: 1;
+                margin-right: 10%;
+                margin-left: 10%;
+                display: grid;
+                
+    
+                &__label{
+                    display: flex;
+                    text-align: center;                    
+                    font-family: Jost;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                }
+            
+                &__paragraph{
+                    display: flex;
+                    text-align: center;     
+                    font-family: Jost;
+                    font-size: 15px;
+                    color: #FFFFFF;
+                    margin: auto;
+            
+                }
+                &__btn{
+                    margin-top: 8%;
+                    margin-right: 20%;
+                    margin-left: 20%;
+                    margin-bottom: 8%;
+                    border: none;
+                    border-radius: 0.8rem;
+                    background-color: #fff;
+                    cursor: pointer;
+                    font-family: Jost;
+                    font-weight: 500;
+                    padding: 1rem 1.6rem;
+            
+                }
+                &__btn:hover{
+                    margin-top: 8%;
+                    border: none;
+                    border-radius: 0.8rem;
+                    background-color: #FFAD9B;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                    font-family: Jost;
+                    font-weight: 500;
+                    padding: 1rem 1.6rem;        
+                }
+            }        
+            &__right{
+                grid-column: 1;
+                grid-row: 2;
+                margin: auto;
+                box-shadow: -2px -26px 89px 0px rgba(53,70,64,0.7);
+                -webkit-box-shadow: -2px -26px 89px 0px rgba(53,70,64,0.7);
+                -moz-box-shadow: -2px -26px 89px 0px rgba(53,70,64,0.7);
+                border-radius: 2.4rem;
+    
+            }
+        }
+    }
+}
